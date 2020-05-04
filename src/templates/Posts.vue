@@ -1,16 +1,21 @@
 <!-- src/templates/Post.vue -->
 <template>
   <Layout>
-    <h1>{{post.title}}</h1>
-    <p>{{post.content}}</p>
+    <div v-for="edge in $page.posts.edges" :key="edge.node.id">
+      <h2>{{ edge.node.title }}</h2>
+    </div>
   </Layout>
 </template>
 
 <page-query>
 query ($id: ID!) {
-  post(id: $id) {
-    title
-    content
+  edges {
+    node {
+      post(id: $id) {
+        title
+        content
+      }
+    }
   }
 }
 </page-query>
