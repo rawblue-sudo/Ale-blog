@@ -9,7 +9,7 @@
 
 <page-query>
 query {
-  post: post(id: $id) {
+  post: post {
         id
         title 
   }
