@@ -1,7 +1,8 @@
 <!-- src/templates/Post.vue -->
 <template>
   <Layout>
-    <h1 v-html="$page.post.title" />
+    <h1>{{post.title}}</h1>
+    <p>{{post.content}}</p>
   </Layout>
 </template>
 
