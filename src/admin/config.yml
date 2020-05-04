@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: master
+  repo: rawblue-sudo/Ale-blog
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
