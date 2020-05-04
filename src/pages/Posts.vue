@@ -9,7 +9,7 @@
 
 <page-query>
 query {
-  posts: allPosts {
+  posts: posts {
     edges {
       node {
         id
