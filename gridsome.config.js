@@ -6,6 +6,14 @@
 
 module.exports = {
   siteName: "Gridsome",
+  templates: {
+    Post: [
+      {
+        path: "/:title",
+        component: "./src/templates/Posts.vue",
+      },
+    ],
+  },
   transformers: {
     remark: {
       externalLinksTarget: "_blank",
