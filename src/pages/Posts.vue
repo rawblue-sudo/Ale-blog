@@ -2,7 +2,7 @@
   <Layout>
     <h2>Latest blog posts</h2>
     <ul>
-      <li v-for="edge in $page.posts.edges" :key="edge.node.id">{{ edge.node.title }}</li>
+      <li v-for="posts in $page.post" :key="edge.node.id">{{ post.title }}</li>
     </ul>
   </Layout>
 </template>
@@ -10,12 +10,8 @@
 <page-query>
 query {
   post: post {
-    edges {
-      node {
         id
-        title
-      }
-    }
+        title 
   }
 }
 </page-query>
