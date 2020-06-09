@@ -9,7 +9,7 @@
 </template>
 
 <page-query>
-query ($id: ID!) {
+query Post ($id: ID!) {
       post(id: $id) {
         title
         content
@@ -22,8 +22,8 @@ query ($id: ID!) {
 export default {
   metaInfo() {
     return {
-      title: this.$page.post.title,
+      title: this.$page.post.title
     };
-  },
+  }
 };
 </script>
